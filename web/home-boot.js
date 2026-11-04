@@ -1,0 +1,1 @@
+(function(){try{if(window.self!==window.top)return}catch(e){return}var t=document.querySelector('.sp-root');if(!t)return;var w=t.parentNode;document.body.classList.add('sp-home');document.body.insertBefore(w,document.body.firstChild);if(!location.hash)window.scrollTo(0,0);})();

@@ -118,7 +118,7 @@ const T = {
   offer(d) {
     return { bg: C.peach, html: `
       <div class="abs" style="left:80px;top:90px">${logo('full', 210)}</div>
-      <div class="abs" style="left:80px;top:300px"><span style="background:${C.forest};color:${C.cream};border-radius:999px;padding:12px 28px;font:700 28px Gabarito;letter-spacing:2px">EARLY BIRD PRICE</span></div>
+      <div class="abs" style="left:80px;top:300px"><span style="background:${C.forest};color:${C.cream};border-radius:999px;padding:12px 28px;font:700 28px Gabarito;letter-spacing:2px">AFTER YOUR FREE TRIAL</span></div>
       <div class="abs h" style="left:80px;top:370px;font-size:150px;color:${C.forest}">$3.99<span style="font:600 42px Gabarito"> /month</span></div>
       <div class="abs" style="left:84px;top:540px;font:600 40px Gabarito;color:${C.word}">or $39.99 a year</div>
       <div class="abs h up" style="left:80px;top:640px;font-size:60px;color:${C.coral}">14 days free</div>

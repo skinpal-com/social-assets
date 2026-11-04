@@ -1,0 +1,36 @@
+# Skinpal
+
+> Skinpal is a mobile app for people living with topical steroid withdrawal (TSW) and eczema. Users log mood, symptoms on a body map, sleep, stress, food and photos in about 30 seconds a day, and the app turns those logs into weekly summaries so they can see what changed over time. It also has a community for people going through the same thing. Skinpal does not give medical advice, diagnose or recommend treatment.
+
+## Key facts
+
+- Made by TSW Nordic AB, Gothenburg, Sweden.
+- Founded by Lukas Löfgren, who has lived with TSW since January 2022 and shares his story on Instagram as @tswlukas (40,000+ followers across platforms).
+- Platforms: iPhone (App Store) and Android (Google Play).
+- Languages: English and Spanish.
+- Price: 14-day free trial, then $3.99 per month or $39.99 per year (USD).
+- Data: encrypted at rest with AES-256 and in transit with TLS. Never sold. Users can delete their account and health data at any time.
+- Who it is for: adults with topical steroid withdrawal, eczema (atopic dermatitis) or similar long-running skin conditions who want a simple daily record to look back on and share with their doctor.
+
+## Main features
+
+- Daily log in about 30 seconds: mood, symptoms and where they flare on a body map, sleep, stress, food, notes and photos.
+- Weekly summaries and patterns built from the user's own logs, to answer "is it better than last month?"
+- Community spaces for TSW, for parents and for the emotional side of living with a skin condition.
+- More features are being added.
+
+## Links
+
+- [Homepage](https://www.skinpal.com/): what Skinpal is, features, pricing and FAQ
+- [TSW guide](https://www.skinpal.com/topical-steroid-withdrawal): what topical steroid withdrawal is and how tracking helps
+- [Blog](https://www.skinpal.com/blog): stories and practical notes about living with TSW and eczema
+- [Skinpal on the App Store](https://apps.apple.com/se/app/skinpal/id6755601252)
+- [Skinpal on Google Play](https://play.google.com/store/apps/details?id=com.skinpal.skinpalapp)
+- [Privacy Policy](https://www.skinpal.com/privacypolicy)
+- [Terms of Service](https://www.skinpal.com/termsofservice)
+- [Instagram @skinpal.app](https://www.instagram.com/skinpal.app/)
+- [LinkedIn](https://www.linkedin.com/company/skinpalapp/)
+
+## Contact
+
+info@skinpal.com

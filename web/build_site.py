@@ -36,7 +36,7 @@ body.sp-sub .preFade,body.sp-sub .fadeIn{opacity:1!important;transform:none!impo
 @media (max-width:820px){.sp-chrome header nav{gap:16px!important;font-size:14px!important}}
 """
 fonts='<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">'
-js=("(function(){"
+js=("(function(){try{if(window.self!==window.top)return}catch(e){return}"
     "function go(){if(document.getElementById('skinpal-home')||document.querySelector('.sp-chrome'))return;document.body.classList.add('sp-sub');"
     "document.head.insertAdjacentHTML('beforeend',"+json.dumps(fonts+'<style>'+css+'</style>')+");"
     "var hd=document.createElement('div');hd.className='sp-chrome';hd.innerHTML="+json.dumps(header)+";"

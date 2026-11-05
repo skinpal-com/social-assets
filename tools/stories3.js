@@ -75,16 +75,17 @@ const S = {
     ${c(70, 260, 'border-width:14px 0 0 14px')}${c(860, 260, 'border-width:14px 14px 0 0')}
     ${c(70, 1440, 'border-width:0 0 14px 14px')}${c(860, 1440, 'border-width:0 14px 14px 0')}
     <div class="abs k" style="left:0;right:0;top:340px;text-align:center;color:${C.peach}">Sunday task</div>
-    <div class="abs h" style="left:110px;right:110px;top:560px;text-align:center;font-size:150px;color:${C.cream}">One photo of your skin.</div>
-    <div class="abs" style="left:0;right:0;top:1180px;text-align:center;font:700 54px Gabarito;color:${C.peach}">Same light. Same spot.</div>
-    <div class="abs" style="left:465px;top:1310px;width:150px;height:150px;border-radius:50%;border:10px solid ${C.cream};padding:12px"><div style="width:100%;height:100%;border-radius:50%;background:${C.cream}"></div></div>` };
+    <div class="abs h" style="left:110px;right:110px;top:560px;text-align:center;font-size:140px;color:${C.cream}">Take one photo of your skin.</div>
+    <div class="abs" style="left:150px;right:150px;top:1060px;text-align:center;font:700 50px/1.25 Gabarito;color:${C.peach}">Same room, same light, every Sunday. In a month you can see what changed.</div>
+    <div class="abs" style="left:465px;top:1290px;width:130px;height:130px;border-radius:50%;border:10px solid ${C.cream};padding:12px"><div style="width:100%;height:100%;border-radius:50%;background:${C.cream}"></div></div>` };
   },
 
   // Mon: the fact, as big as it gets.
   'sp-s6': () => ({ bg: C.jade, html: `
-    <div class="abs h" style="left:70px;top:300px;font-size:300px;line-height:.86;letter-spacing:-8px;color:${C.forest}">You<br>can’t<br>catch<br><span style="color:${C.cream}">TSW.</span></div>
-    <div class="abs" style="left:0;top:1440px">${waves(1080, 480, [C.peach, C.coral, C.cream, C.forest])}</div>
-    <div class="abs" style="left:78px;top:1330px;font:700 46px Gabarito;color:${C.forest}">Send this to someone who asked ↗</div>` }),
+    <div class="abs k" style="left:90px;top:300px;color:${C.forest}">Monday check-in</div>
+    <div class="abs h" style="left:84px;right:60px;top:370px;font-size:170px;color:${C.forest}">How many hours did you <span style="color:${C.cream}">sleep?</span></div>
+    <img class="abs" src="${A('yeti-sleep.png')}" style="left:200px;top:990px;width:680px">
+    ${hand(150, 1560, 'reply with a number', C.forest, 70, -4)}${arrow(700, 1530, C.forest, 22)}` }),
 
   // Tue: the offer, with the real app filling the bottom half and cut by the frame.
   'sp-s7': () => ({ bg: C.cream, html: `
@@ -100,8 +101,7 @@ const S = {
     ${hand(330, 1300, 'tell me here', '#1A1A1A', 76, -5)}${arrow(640, 1390, '#1A1A1A', 10)}` }),
   'lk-s3': () => ({ bg: C.forest, html: `
     ${igText(['In case you missed it:', 'I built an app for TSW.'], '#FFFFFF', '#111111', 72, 280)}
-    <img class="abs" src="${A('phone-mood.png')}" style="left:215px;top:560px;width:650px;transform:rotate(3deg)">
-    ${igText(['14 days free · @skinpal.app'], C.peach, '#111111', 50, 1500)}` }),
+    <img class="abs" src="${A('phone-mood.png')}" style="left:215px;top:560px;width:650px;transform:rotate(3deg)">` }),
   'lk-s4': () => ({ bg: '#2B2B2B', html: `
     ${igText(['What’s been', 'hardest', 'this month?'], C.coral, '#FFFFFF', 104, 600)}
     ${hand(250, 1290, 'I read every message', '#FFFFFF', 70, -4)}${arrow(700, 1390, '#FFFFFF', 14)}` }),

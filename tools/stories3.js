@@ -59,7 +59,7 @@ const S = {
 
   // Sat: bingo teaser, the real card peeking up from the bottom.
   'sp-s4': () => ({ bg: C.peach, html: `
-    <div class="abs k" style="left:90px;top:300px;color:${C.coral}">Tonight · 21:00</div>
+    <div class="abs k" style="left:90px;top:300px;color:${C.coral}">Later today on the feed</div>
     <div class="abs h" style="left:84px;top:360px;font-size:250px;color:${C.forest}">TSW<br>Bingo</div>
     <div class="abs" style="left:92px;top:880px;font:700 52px Gabarito;color:${C.forest}">How many squares do you get?</div>
     <img class="abs" src="file://${path.resolve('/home/claude/social-assets/2026-w45-v3/sp-p4.jpg')}" style="left:150px;top:1040px;width:780px;border-radius:36px;transform:rotate(-4deg);box-shadow:0 30px 70px rgba(31,77,72,.28)">` }),

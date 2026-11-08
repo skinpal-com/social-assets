@@ -49,7 +49,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>${css}</st
 <!-- 1: the question -->
 <div class="scene" style="background:${C.peach};animation:none">
   <div class="abs h" style="left:80px;right:80px;top:640px;font-size:150px;color:${C.forest}">${words('How has it been since last time?', 0.2)}</div>
-  <div class="abs t fade" style="left:84px;top:1250px;font-size:44px;color:${C.word};animation-delay:1.4s">Cue: blank stare.</div>
+  <div class="abs t fade" style="left:84px;top:1250px;font-size:44px;color:${C.word};animation-delay:1.4s">And your mind goes completely blank.</div>
 </div>
 <!-- 2: the blur -->
 <div class="scene" style="background:${C.forest};animation-delay:2.6s">
@@ -72,7 +72,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>${css}</st
 </div>
 <!-- 5: share -->
 <div class="scene" style="background:${C.cream};animation-delay:11.6s">
-  <div class="abs h" style="left:80px;right:80px;top:330px;font-size:110px;color:${C.forest}">${words('Hand it over. Mic drop optional.', 11.85)}</div>
+  <div class="abs h" style="left:80px;right:80px;top:330px;font-size:110px;color:${C.forest}">${words('Share it. Let the report do the talking.', 11.85)}</div>
   <div class="abs pop" style="left:0;right:0;top:900px;text-align:center;animation-delay:12.3s"><div class="press" style="display:inline-block;animation-delay:12.9s">${P.shareBtn(1.25)}</div></div>
   <div class="abs tap" style="left:470px;top:880px;width:140px;height:140px;border-radius:50%;background:#fff;animation-delay:12.9s"></div>
   <div class="abs sheet" style="left:0;right:0;bottom:0;height:560px;background:#F2F2F4;border-radius:44px 44px 0 0;padding:40px 70px;animation-delay:13.15s">

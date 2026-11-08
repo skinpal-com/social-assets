@@ -26,7 +26,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>${css}</st
 <div class="scene" style="background:${C.peach};animation-delay:2.9s">
   <div class="abs h fade" style="left:80px;top:620px;font-size:120px;color:${C.forest};animation-delay:3.2s">You:</div>
   <div class="abs" style="left:66px;top:880px"><span class="dot" style="animation-delay:3.3s"></span><span class="dot" style="animation-delay:3.45s"></span><span class="dot" style="animation-delay:3.6s"></span></div>
-  <div class="abs t fade" style="left:84px;top:1060px;font-size:46px;color:${C.word};animation-delay:3.9s">Brain.exe has stopped working.</div>
+  <div class="abs t fade" style="left:84px;top:1060px;font-size:46px;color:${C.word};animation-delay:3.9s">Trying to remember 90 days on the spot.</div>
 </div>
 <div class="scene" style="background:linear-gradient(180deg,#FFF0E7,${C.peach});animation-delay:5.0s">
   <div class="abs h" style="left:80px;right:80px;top:280px;font-size:118px;color:${C.forest}">${words('Or you open this.', 5.25)}</div>

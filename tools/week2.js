@@ -26,7 +26,8 @@ const S = {
   // ---------- Launch story sequence (posted manually by Lukas: poll + link stickers) ----------
   'launch-s1': { h: H, bg: C.peach, html: `
     <div class="abs k" style="left:90px;top:300px;color:${C.coral}">Be honest</div>
-    <div class="abs h" style="left:84px;right:70px;top:370px;font-size:132px;color:${C.forest}">Do you feel heard at your skin appointments?</div>` },
+    <div class="abs h" style="left:84px;right:70px;top:370px;font-size:132px;color:${C.forest}">Do you feel heard at your skin appointments?</div>
+    <div class="abs t" style="left:90px;top:1180px;font-size:50px;font-weight:700;color:${C.coral}">Reply yes or no. We read every one.</div>` },
   'launch-s2': { h: H, bg: C.forest, html: `
     <div class="abs h" style="left:84px;top:300px;font-size:150px;color:${C.cream}">Same.</div>
     <div class="abs h" style="left:84px;top:460px;font-size:96px;color:${C.peach}">So we built something.</div>
@@ -35,7 +36,8 @@ const S = {
   'launch-s4': { h: H, bg: C.cream, html: `
     <div class="abs" style="left:90px;top:290px">${P.logo('word', 230)}</div>
     <div class="abs h" style="left:84px;right:70px;top:430px;font-size:140px;color:${C.forest}">Your last 90 days. One report.</div>
-    <div class="abs t" style="left:90px;top:1010px;font-size:46px;line-height:1.35;color:${C.word}">Already have Skinpal? Update the app.<br>New here? Free for 14 days.</div>` },
+    <div class="abs t" style="left:90px;top:1010px;font-size:46px;line-height:1.35;color:${C.word}">Already have Skinpal? Update the app.<br>New here? Free for 14 days.</div>
+    <div class="abs t" style="left:90px;top:1200px;font-size:56px;font-weight:800;color:${C.coral}">Link in bio.</div>` },
 
   // ---------- Skinpal stories, week 2 ----------
   'w2-sp-s11': { h: H, bg: C.forest, html: `
@@ -75,7 +77,7 @@ const S = {
     <div class="abs h" style="left:70px;right:70px;top:180px;font-size:110px;color:${C.forest}">Rate your skin week, 1 to 10.</div>
     <div class="abs" style="left:70px;top:560px;width:940px;display:grid;grid-template-columns:repeat(10,1fr);gap:10px">
       ${[...Array(10)].map((_, i) => `<div style="aspect-ratio:.8;border-radius:16px;background:${['#E98D73', '#EC9A82', '#F0AC97', '#F6C3B1', '#FBDCCB', '#DDE9E1', '#C3DCCD', '#A9CCB8', '#8CB8A1', '#6E9C88'][i]};display:flex;align-items:center;justify-content:center;font:800 44px Gabarito;color:${C.forest}">${i + 1}</div>`).join('')}</div>
-    <div class="abs t" style="left:72px;top:720px;width:940px;display:flex;justify-content:space-between;font-size:28px;color:${C.word}"><span>“Don’t ask.”</span><span>“Who even am I?”</span></div>
+    <div class="abs t" style="left:72px;top:720px;width:940px;display:flex;justify-content:space-between;font-size:28px;color:${C.word}"><span>“Don’t ask.”</span><span>“Best in months.”</span></div>
     <div class="abs t" style="left:72px;top:880px;font-size:38px;line-height:1.4;color:${C.word}">One number in the comments. Essays welcome.<br>No judgement either way.</div>
     <img class="abs" src="${A('yeti-thumb.png')}" style="right:60px;bottom:30px;width:300px">` },
   // Save-worthy carousel: 5 things to write down (what to note, never what to do)

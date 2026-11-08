@@ -65,6 +65,12 @@ const S = {
     <div class="abs h" style="left:84px;right:70px;top:370px;font-size:132px;color:${C.forest}">5 things to write down before your next skin appointment.</div>
     <div class="abs t" style="left:90px;top:1130px;font-size:46px;line-height:1.35;color:${C.word}">Save it. Your future self, mid-appointment,<br>mind suddenly blank, says thanks.</div>` },
 
+  'w2-sp-es': { h: H, bg: C.coral, html: `
+    <div class="abs k" style="left:90px;top:300px;color:${C.forest}">Skinpal en español</div>
+    <div class="abs h" style="left:84px;right:70px;top:380px;font-size:150px;color:#fff">¿Hablas español?</div>
+    <div class="abs h" style="left:84px;right:70px;top:720px;font-size:150px;color:${C.forest}">Skinpal también.</div>
+    <div class="abs t" style="left:90px;top:1090px;font-size:48px;line-height:1.35;color:#fff">La app entera, en español.<br>Para ti y para tu familia.</div>
+    <div class="abs t" style="left:90px;top:1300px;font-size:52px;font-weight:800;color:${C.forest}">Gratis 14 días · Link en la bio</div>` },
   // ---------- Skinpal feed, week 2 ----------
   'w2-sp-p13': { h: FEED, bg: C.forest, html: `
     <div class="abs k" style="left:70px;top:110px;color:${C.peach}">Parents of TSW kids</div>

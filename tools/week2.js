@@ -124,13 +124,13 @@ S['w2-lk-s1'] = { h: H, bg: C.forest, html: `
   ${igText(['Made a thing.'], '#FFFFFF', '#111111', 96, 300)}
   <div class="abs" style="left:50px;top:560px;transform:rotate(3deg)">${P.reportTop({ w: 980 })}</div>
   ${igText(['What should I add to it?'], C.peach, '#111111', 72, 1250)}
-  ${hand(350, 1450, 'tell me', '#FFFFFF', 76, -5)}${arrow(600, 1480, '#FFFFFF', 14)}` };
+  ` };
 S['w2-lk-s2'] = { h: H, bg: '#2B2B2B', html: `
   ${igText(['Describe your week', 'in one emoji.', 'Go.'], C.coral, '#FFFFFF', 100, 620)}
-  ${hand(330, 1310, 'I’ll start: melting face', '#FFFFFF', 76, -4)}${arrow(640, 1400, '#FFFFFF', 14)}` };
+  ` };
 S['w2-lk-s3'] = { h: H, bg: '#C9B8A6', html: `
   ${igText(['Sunday question:', 'one small win', 'this week?'], '#1A1A1A', '#FFFFFF', 100, 600)}
-  ${hand(220, 1310, 'tiny counts. tiny is great.', '#1A1A1A', 70, -4)}${arrow(700, 1400, '#1A1A1A', 14)}` };
+  ` };
 
 (async () => {
   const b = await chromium.launch();

@@ -104,7 +104,7 @@ const S = {
     <img class="abs" src="${A('phone-mood.png')}" style="left:215px;top:560px;width:650px;transform:rotate(3deg)">` }),
   'lk-s4': () => ({ bg: '#2B2B2B', html: `
     ${igText(['What’s been', 'hardest', 'this month?'], C.coral, '#FFFFFF', 104, 600)}
-    ${hand(250, 1290, 'I read every message', '#FFFFFF', 70, -4)}${arrow(700, 1390, '#FFFFFF', 14)}` }),
+    ` }),
 };
 
 (async () => {

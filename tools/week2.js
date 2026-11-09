@@ -27,7 +27,7 @@ const S = {
   'launch-s1': { h: H, bg: C.peach, html: `
     <div class="abs k" style="left:90px;top:300px;color:${C.coral}">Be honest</div>
     <div class="abs h" style="left:84px;right:70px;top:370px;font-size:132px;color:${C.forest}">Do you feel heard at your skin appointments?</div>
-    <div class="abs t" style="left:90px;top:1180px;font-size:50px;font-weight:700;color:${C.coral}">Reply yes or no. We read every one.</div>` },
+    <div class="abs t" style="left:90px;top:1180px;font-size:50px;font-weight:700;color:${C.coral}">Reply yes or no.</div>` },
   'launch-s2': { h: H, bg: C.forest, html: `
     <div class="abs h" style="left:84px;top:300px;font-size:150px;color:${C.cream}">Same.</div>
     <div class="abs h" style="left:84px;top:460px;font-size:96px;color:${C.peach}">So we built something.</div>
@@ -77,7 +77,7 @@ const S = {
     <div class="abs h" style="left:70px;right:70px;top:180px;font-size:104px;color:${C.cream}">What do you wish someone had told you in month one?</div>
     <div class="abs t" style="left:72px;top:730px;font-size:38px;line-height:1.4;color:${C.jadeL}">Another parent is in month one tonight.<br>Your answer might be the one they need.</div>
     <img class="abs" src="${A('yeti-wave.png')}" style="right:60px;bottom:40px;width:360px">
-    <div class="abs t" style="left:72px;bottom:70px;font-size:28px;color:${C.jadeL}">Comments below. We read all of them.</div>` },
+    <div class="abs t" style="left:72px;bottom:70px;font-size:28px;color:${C.jadeL}">Share yours in the comments.</div>` },
   'w2-sp-p15': { h: FEED, bg: C.cream, html: `
     <div class="abs k" style="left:70px;top:110px;color:${C.coral}">Sunday check-in</div>
     <div class="abs h" style="left:70px;right:70px;top:180px;font-size:110px;color:${C.forest}">Rate your skin week, 1 to 10.</div>

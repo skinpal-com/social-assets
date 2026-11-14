@@ -162,3 +162,41 @@ head = open('web/home-head.html').read()
 head = re.sub(r'<script type="application/ld\+json">.*?</script>', lambda m: '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>', head, flags=re.S)
 open('web/home-head.html', 'w').write(head)
 print('block', len(block), 'faq', len(faq), [q for q, _ in faq])
+
+# ---- subpage chrome (site.js): same nav and footer as the new homepage
+navm = re.search(r'<nav style="max-width: 1240px.*?</nav>', block, re.S).group(0)
+for a in ['#how', '#community', '#price', '#get']:
+    navm = navm.replace('href="%s"' % a, 'href="/%s"' % a)
+footm = re.search(r'<footer.*?</footer>', block, re.S).group(0)
+FONT = CDN
+sub_css = r"""
+@font-face{font-family:'Gabarito';font-weight:800;src:url(%sGabarito_800ExtraBold.ttf) format('truetype');font-display:swap}
+@font-face{font-family:'Gabarito';font-weight:700;src:url(%sGabarito_700Bold.ttf) format('truetype');font-display:swap}
+body.sp-sub{background:#F8F5EF!important}
+body.sp-sub #header,body.sp-sub header.Header,body.sp-sub #footer-sections,body.sp-sub footer.sections{display:none!important}
+body.sp-sub .page-section,body.sp-sub .page-section .section-background,body.sp-sub .blog-list,body.sp-sub article{background-color:#F8F5EF!important}
+.sp-chrome{font-family:Inter,system-ui,sans-serif;color:#3E6F69;-webkit-font-smoothing:antialiased}
+.sp-chrome *{box-sizing:border-box}
+.sp-chrome a{color:#1F4E48}
+.sp-chrome.sp-top{background:#F8F5EF;border-bottom:1px solid rgba(31,78,72,.08)}
+body.sp-sub h1,body.sp-sub h2,body.sp-sub h3,body.sp-sub h4,body.sp-sub .blog-title,body.sp-sub .entry-title{font-family:Gabarito,sans-serif!important;color:#1F4E48!important;font-weight:800!important;letter-spacing:-.02em;text-transform:none!important}
+body.sp-sub h1{line-height:1.02!important}
+body.sp-sub h2{line-height:1.08!important}
+body.sp-sub .sqs-html-content p,body.sp-sub .sqs-html-content li,body.sp-sub .blog-excerpt p,body.sp-sub .blog-item-content p{font-family:Inter,system-ui,sans-serif!important;color:#3A4A47!important;font-size:18px!important;line-height:1.65!important;opacity:1!important}
+body.sp-sub .sqs-html-content a,body.sp-sub .blog-item-content a{color:#1F4E48!important;text-decoration:underline!important;text-underline-offset:3px}
+body.sp-sub .sqs-block-button-element,body.sp-sub .blog-more-link,body.sp-sub .sqs-button-element--primary{background:#1F4E48!important;color:#FFFFFF!important;border-radius:999px!important;font-family:Inter,sans-serif!important;font-weight:600!important;text-transform:none!important;letter-spacing:0!important;border:0!important}
+body.sp-sub .blog-meta-section,body.sp-sub .blog-date,body.sp-sub .blog-categories-list{font-family:Inter,sans-serif!important;color:#5E7773!important}
+body.sp-sub .preFade,body.sp-sub .fadeIn{opacity:1!important;transform:none!important;transition:none!important}
+@media (max-width:900px){.sp-chrome .navlinks{display:none!important}}
+""" % (FONT, FONT)
+fonts = '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">'
+js = ("(function(){try{if(window.self!==window.top)return}catch(e){return}"
+      "function go(){if(document.getElementById('skinpal-home')||document.querySelector('.sp-chrome'))return;document.body.classList.add('sp-sub');"
+      "document.head.insertAdjacentHTML('beforeend'," + json.dumps(fonts + '<style>' + sub_css + '</style>') + ");"
+      "var hd=document.createElement('div');hd.className='sp-chrome sp-top';hd.innerHTML=" + json.dumps(navm) + ";"
+      "document.body.insertBefore(hd,document.body.firstChild);"
+      "var ft=document.createElement('div');ft.className='sp-chrome';ft.innerHTML=" + json.dumps(footm) + ";"
+      "document.body.appendChild(ft);}"
+      "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();})();")
+open('web/site.js', 'w').write(js)
+print('site.js', len(js))

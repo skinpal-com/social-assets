@@ -1,6 +1,6 @@
 # Skinpal
 
-> Skinpal is a mobile app for people living with topical steroid withdrawal (TSW) and eczema. Users log mood, symptoms on a body map, sleep, stress, food and photos in about 30 seconds a day, and the app turns those logs into weekly summaries so they can see what changed over time. It also has a community for people going through the same thing. Skinpal does not give medical advice, diagnose or recommend treatment.
+> Skinpal is a mobile app and community for people living with topical steroid withdrawal (TSW) and eczema. Users log their day in one tap or by talking (voice logging; audio is never stored), mark symptoms on a body map, and see good and bad periods in a calendar coloured by itch. Daily and weekly summaries are written only from the user's own logs, and a 90-day report can be shared with a doctor. A community inside the app connects people going through the same thing. Skinpal does not give medical advice, diagnose or recommend treatment.
 
 ## Key facts
 
@@ -14,10 +14,13 @@
 
 ## Main features
 
-- Daily log in about 30 seconds: mood, symptoms and where they flare on a body map, sleep, stress, food, notes and photos.
-- Weekly summaries and patterns built from the user's own logs, to answer "is it better than last month?"
-- Community spaces for TSW, for parents and for the emotional side of living with a skin condition.
-- More features are being added.
+- One-tap logging ("same as yesterday") and voice logging: say how the day was and Skinpal fills in the log. The mic only listens when tapped and audio is never stored.
+- Body map: mark several areas at once; itch on a 0 to 10 scale, sleep, mood, stress, food, notes and photos.
+- Calendar coloured by itch, showing good and bad periods at a glance.
+- Daily and weekly summaries built only from the user's own logs, to answer "is it better than last month?" No advice.
+- 90-day report to bring to a doctor, with notes and photos only if the user chooses.
+- Community inside the app, with spaces for TSW, for parents and for the emotional side of living with a skin condition.
+- Current version: 2.3 (November 2026), with a redesigned, calmer interface.
 
 ## Links
 

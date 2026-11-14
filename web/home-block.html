@@ -1,0 +1,334 @@
+<div id="skinpal-home">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+.sp-root{width:100%;margin:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+.sp-root *{box-sizing:border-box}
+.sp-root h1,.sp-root h2,.sp-root h3,.sp-root p,.sp-root blockquote{text-transform:none;font-style:normal;letter-spacing:normal}
+.sp-root img{max-width:100%}
+.sp-root summary{list-style:none}
+.sp-root summary::-webkit-details-marker{display:none}
+.sp-root summary::after{content:"+";float:right;font-weight:400}
+.sp-root details[open] summary::after{content:"\2013"}
+.sp-root .yeti{position:absolute;z-index:1;pointer-events:none}
+.sp-root .bob{animation:bob 4s ease-in-out infinite}
+body.sp-home #siteWrapper,body.sp-home .sqs-announcement-bar-dropzone,body.sp-home #header,body.sp-home header.Header,body.sp-home #footer-sections,body.sp-home footer.sections{display:none!important}
+body.sp-home{background:#F8F5EF!important}
+body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important;padding-bottom:0!important}
+@media (max-width:900px){.sp-root .strip{margin-top:-40px!important}.sp-root .comm-yeti{display:none}.sp-root blockquote{font-size:30px!important}.sp-root #community{padding-top:96px!important}.sp-root .yeti{transform:scale(.7);transform-origin:bottom}.sp-root .hero-yeti-left{display:none}}
+@media (prefers-reduced-motion: reduce){.sp-root .bob{animation:none}}
+@font-face{font-family:'Gabarito';font-weight:800;src:url(https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/Gabarito_800ExtraBold.ttf) format('truetype');font-display:swap}
+@font-face{font-family:'Gabarito';font-weight:700;src:url(https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/Gabarito_700Bold.ttf) format('truetype');font-display:swap}
+.sp-root a{color:#1F4E48}.sp-root a:hover{color:#C4674F}
+.sp-root .bob{animation:bob 4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.sp-root .land{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block;object-fit:cover;object-position:50% 100%;pointer-events:none}
+@keyframes sway{0%{transform:rotate(-2.2deg)}100%{transform:rotate(2.2deg)}}
+@keyframes drift{0%{transform:translateX(-50px)}100%{transform:translateX(70px)}}
+@keyframes glow{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.07);opacity:1}}
+@keyframes snow{0%{transform:translate(0,0)}25%{transform:translate(18px,240px)}50%{transform:translate(-10px,480px)}75%{transform:translate(14px,720px)}100%{transform:translate(0,940px)}}
+@keyframes rain{0%{transform:translate(0,0)}100%{transform:translate(-60px,940px)}}
+@keyframes petal{0%{transform:translate(0,0) rotate(0)}50%{transform:translate(60px,470px) rotate(200deg)}100%{transform:translate(-20px,940px) rotate(400deg)}}
+@keyframes fly{0%,100%{opacity:.15;transform:translate(0,0)}50%{opacity:1;transform:translate(8px,-18px)}}
+@keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+.sp-root .live{position:relative;overflow:hidden}
+.sp-root .live > :not(.land):not(.yeti){position:relative;z-index:2}
+@keyframes jump{
+0%{transform:translateY(0) scale(1,1);animation-timing-function:ease-in}
+4%{transform:translateY(0) scale(1.05,.93);animation-timing-function:cubic-bezier(.2,.8,.4,1)}
+11%{transform:translateY(-52px) scale(.97,1.04);animation-timing-function:cubic-bezier(.6,0,.9,.4)}
+17%{transform:translateY(0) scale(1.05,.94);animation-timing-function:cubic-bezier(.2,.8,.4,1)}
+23%{transform:translateY(-28px) scale(.98,1.03);animation-timing-function:cubic-bezier(.6,0,.9,.4)}
+28%{transform:translateY(0) scale(1.03,.97);animation-timing-function:ease-out}
+33%{transform:translateY(0) scale(1,1);animation-timing-function:ease-in-out}
+66%{transform:translateY(0) scale(1,1.014);animation-timing-function:ease-in-out}
+100%{transform:translateY(0) scale(1,1)}}
+@keyframes arm{
+0%{transform:rotate(0)}4%{transform:rotate(5deg)}11%{transform:rotate(-17deg)}17%{transform:rotate(3deg)}23%{transform:rotate(-12deg)}30%{transform:rotate(0)}
+66%{transform:rotate(-3deg)}100%{transform:rotate(0)}}
+@keyframes blink{0%,30%{transform:scaleY(1)}32%{transform:scaleY(.1)}34.5%{transform:scaleY(1)}74%{transform:scaleY(1)}76%{transform:scaleY(.1)}78.5%{transform:scaleY(1)}100%{transform:scaleY(1)}}
+@keyframes head{0%{transform:translateY(0)}4%{transform:translateY(4px)}11%{transform:translateY(-5px)}17%{transform:translateY(4px)}23%{transform:translateY(-3px)}30%{transform:translateY(0)}66%{transform:translateY(-2px)}100%{transform:translateY(0)}}
+@keyframes shadow{0%{transform:scale(1);opacity:.16}11%{transform:scale(.72);opacity:.09}17%{transform:scale(1.04);opacity:.17}23%{transform:scale(.84);opacity:.11}28%,100%{transform:scale(1);opacity:.16}}
+.sp-root .chapter{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px;align-items:center;max-width:1180px;margin:0 auto;padding:140px 32px 300px}
+.sp-root .strip{display:flex;gap:28px;justify-content:center;align-items:flex-end}
+@media (max-width:900px){
+ .sp-root .chapter{grid-template-columns:minmax(0,1fr);gap:40px;padding:96px 24px 240px}
+ .sp-root .h1{font-size:68px !important}
+ .sp-root .h2{font-size:44px !important}
+ .sp-root .strip img:nth-child(1),.sp-root .strip img:nth-child(5){display:none}
+ .sp-root .navlinks{display:none !important}
+}</style>
+<div class="sp-root" style="font-family: Inter, system-ui, sans-serif; color: #3E6F69; background: #F8F5EF; overflow: hidden">
+  <!-- HERO: WINTER -->
+  <header class="live" style="min-height: 1040px">
+    <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/land-winter.svg" alt="" aria-hidden="true">
+    <nav style="max-width: 1240px; margin: 0 auto; padding: 28px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; position: relative">
+      <a href="/" aria-label="Skinpal home"><img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/logo-green.png" alt="Skinpal" style="height: 34px; display: block"></a>
+      <div class="navlinks" style="display: flex; gap: 36px; font-size: 15px; font-weight: 500; background: rgba(255,255,255,.7); padding: 12px 28px; border-radius: 999px; border: 1px solid rgba(31,78,72,.08)">
+        <a href="#how" style="text-decoration: none">How it works</a>
+        <a href="#community" style="text-decoration: none">Community</a>
+        <a href="/topical-steroid-withdrawal" style="text-decoration: none">TSW guide</a>
+        <a href="/blog" style="text-decoration: none">Blog</a>
+        <a href="#price" style="text-decoration: none">Pricing</a>
+      </div>
+      <a href="#get" style="text-decoration: none; background: #1F4E48; color: #FFFFFF; font-weight: 600; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Download</a>
+    </nav>
+    <div style="max-width: 1000px; margin: 0 auto; padding: 64px 32px 0; text-align: center; position: relative">
+      <h1 style="display: inline-block; margin: 0; background: #E98D74; color: #1A1A1A; font-family: Inter, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 600; padding: 8px 16px; border-radius: 999px">Skinpal: a tracker and community for topical steroid withdrawal (TSW) and eczema</h1>
+      <p role="heading" aria-level="2" class="h1" style="font-family: Gabarito, Inter, sans-serif; font-weight: 800; font-size: 136px; line-height: .9; letter-spacing: -0.04em; color: #1F4E48; margin: 28px 0 0">Meet the new Skinpal.</p>
+      <p style="font-size: 21px; line-height: 1.55; color: #3E6F69; max-width: 640px; margin: 28px auto 0">A calmer tracker and community for eczema and TSW. One tap or a few spoken words, and your day is logged. Over time, your own patterns show up. And you're never the only one awake at 3am.</p>
+      <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 36px">
+        <a href="#get" style="display: inline-flex; align-items: center; text-decoration: none; background: #1F4E48; color: #FFFFFF; padding: 14px 28px; border-radius: 16px; font-weight: 600; font-size: 16px; min-height: 56px; box-sizing: border-box">Start 14 days free</a>
+        <a href="#how" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; background: #FFFFFF; color: #1F4E48; padding: 14px 28px; border-radius: 16px; font-weight: 600; font-size: 16px; min-height: 56px; box-sizing: border-box; border: 1px solid rgba(31,78,72,.15)">
+          See how it works
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+      </div>
+    </div>
+    <img class="yeti" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/yeti-waving.svg" alt="" aria-hidden="true" style="position: absolute; right: 8%; bottom: 40px; width: 230px; z-index: 1">
+    <img class="yeti hero-yeti-left" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/yeti-logged.svg" alt="" aria-hidden="true" style="position: absolute; left: 7%; bottom: 46px; width: 190px; z-index: 1">
+  </header>
+  <!-- PHONE STRIP -->
+  <section aria-label="App screens" style="background: #F8F5EF; padding: 0 24px 40px; position: relative">
+    <div class="strip" style="margin-top: -260px; position: relative">
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-welcome.webp" alt="Welcome screen" style="width: 210px; transform: translateY(70px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.2))">
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-logstart.webp" alt="One-tap log screen" style="width: 240px; transform: translateY(30px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.22))">
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-home.webp" alt="Home screen with insights" style="width: 290px; filter: drop-shadow(0 40px 70px rgba(31,78,72,.28))">
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-bodymap.webp" alt="Body map screen" style="width: 240px; transform: translateY(30px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.22))">
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-calendar.webp" alt="Calendar screen" style="width: 210px; transform: translateY(70px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.2))">
+    </div>
+    <p style="text-align: center; font-family: Gabarito, sans-serif; font-weight: 700; font-size: 30px; color: #1F4E48; margin: 120px auto 0; max-width: 760px; line-height: 1.25">Built for the bad seasons and the good ones. And the weird in-between weeks nobody warns you about.</p>
+  </section>
+  <!-- 01 LATE WINTER: ONE TAP -->
+  <section id="how" class="live">
+    <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/land-late.svg" alt="" aria-hidden="true">
+    <div class="chapter">
+      <div>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">01</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">One tap on the hard days.</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Feeling the same as yesterday? Tap once and you're done. For the days when typing is a big ask, and honestly, most of them are.</p>
+      </div>
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-logstart.webp" alt="One-tap logging screen" style="width: 330px; justify-self: center; filter: drop-shadow(0 40px 60px rgba(31,78,72,.25))">
+    </div>
+  </section>
+  <!-- 02 THAW: VOICE -->
+  <section class="live">
+    <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/land-thaw.svg" alt="" aria-hidden="true">
+    <div class="chapter">
+      <div style="background: #FFFFFF; border-radius: 28px; padding: 36px; box-shadow: 0 30px 70px rgba(31,78,72,.14); order: 0">
+        <div style="display: flex; align-items: center; gap: 16px">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: #E98D74; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+          </div>
+          <div style="font-size: 14px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #3E6F69">Listening</div>
+        </div>
+        <p style="font-family: Gabarito, sans-serif; font-weight: 700; font-size: 30px; line-height: 1.25; color: #1F4E48; margin: 24px 0">"Bad night. Itch around an eight, mostly elbows and neck. Didn't leave the house."</p>
+        <div style="border-top: 1px dashed rgba(31,78,72,.2); padding-top: 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+          <div style="background: #F8F5EF; border-radius: 14px; padding: 14px 16px"><div style="font-size: 13px">Itch</div><div style="font-weight: 600; color: #1F4E48; font-size: 18px">8 / 10</div></div>
+          <div style="background: #F8F5EF; border-radius: 14px; padding: 14px 16px"><div style="font-size: 13px">Where</div><div style="font-weight: 600; color: #1F4E48; font-size: 18px">Elbows, neck</div></div>
+          <div style="background: #F8F5EF; border-radius: 14px; padding: 14px 16px"><div style="font-size: 13px">Sleep</div><div style="font-weight: 600; color: #1F4E48; font-size: 18px">Bad night</div></div>
+          <div style="background: #F8F5EF; border-radius: 14px; padding: 14px 16px"><div style="font-size: 13px">Day</div><div style="font-weight: 600; color: #1F4E48; font-size: 18px">Stayed in</div></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">02</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">Or just talk.</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Say how your day was. Skinpal turns it into a log. The mic only listens when you tap, and the audio is never stored. Typing is optional. Complaining is encouraged.</p>
+      </div>
+    </div>
+  </section>
+  <!-- 03 SPRING: BODY MAP -->
+  <section class="live">
+    <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/land-spring.svg" alt="" aria-hidden="true">
+    <div class="chapter">
+      <div>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">03</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">Mark where you feel it.</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Several body areas at once, described once. Because it rarely has the manners to stay in one place.</p>
+      </div>
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-bodymap.webp" alt="Body map screen" style="width: 330px; justify-self: center; filter: drop-shadow(0 40px 60px rgba(31,78,72,.25))">
+    </div>
+  </section>
+  <!-- 04 SUMMER: PATTERNS -->
+  <section class="live">
+    <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/land-summer.svg" alt="" aria-hidden="true">
+    <div class="chapter">
+      <div style="display: flex; justify-content: center; align-items: flex-end">
+        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-calendar.webp" alt="Calendar coloured by itch" style="width: 260px; transform: rotate(-5deg) translateX(30px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.22))">
+        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/phone-home.webp" alt="Home screen with insights" style="width: 290px; position: relative; z-index: 2; filter: drop-shadow(0 40px 60px rgba(31,78,72,.28))">
+      </div>
+      <div>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">04</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">See your own patterns.</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">A calendar coloured by your itch shows good and bad stretches at a glance. Daily and weekly summaries are written from what you logged. No advice, no guessing, no horoscope.</p>
+      </div>
+    </div>
+  </section>
+  <!-- 05 EVENING: REPORT -->
+  <section id="report" class="live" style="color: #DCE9E3">
+    <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/land-evening.svg" alt="" aria-hidden="true">
+    <img class="yeti" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/yeti-sleepy.svg" alt="" aria-hidden="true" style="position: absolute; right: 7%; bottom: 24px; width: 200px; z-index: 1">
+    <div class="chapter" style="padding-bottom: 340px">
+      <div>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">05</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #FFFFFF; margin: 12px 0 0">A clear report for your doctor.</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Ninety days of your logs on one page, ready before your appointment. You decide whether notes and photos go in. Much better than "it's been, um, bad?"</p>
+      </div>
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/report.webp" alt="Example page of the 90-day report for a fictional user" style="width: 100%; max-width: 520px; justify-self: center; border-radius: 16px; transform: rotate(3deg); box-shadow: 0 40px 90px rgba(0,0,0,.4)">
+    </div>
+  </section>
+  <!-- COMMUNITY (in the app) -->
+  <section id="community" style="background: #F8F5EF; padding: 160px 32px 0">
+    <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 56px; align-items: center">
+      <div>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">06</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">A community that gets it. Inside the app.</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 520px">Skinpal has its own community of people living with eczema and TSW. Ask the questions you can't ask anyone else, share the small wins, and check in on the bad weeks. There are spaces for TSW, for parents, and for the emotional side of it. Nobody asks you to explain. Everybody already knows.</p>
+        <a href="https://www.instagram.com/skinpal.app/" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; font-weight: 600; font-size: 16px; min-height: 44px">We're on Instagram too, @skinpal.app
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div style="position: relative">
+        <img class="comm-yeti" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/yeti-s-community.webp" alt="" aria-hidden="true" style="width: 200px; position: absolute; right: -10px; top: -150px; z-index: 1">
+        <div style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; position: relative; z-index: 2">
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 28px; box-shadow: 0 20px 50px rgba(31,78,72,.08)">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #FFEFE7; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C4674F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 10a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.4"/><path d="M12 16.5h.01"/></svg></div>
+          <h3 style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 24px; color: #1F4E48; margin: 18px 0 0">Ask the room</h3>
+          <p style="font-size: 16px; line-height: 1.55; margin: 8px 0 0">Questions about sleep, clothes, work, bad nights. Answered by people who have lived them.</p>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 28px; box-shadow: 0 20px 50px rgba(31,78,72,.08)">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #FFEFE7; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C4674F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></div>
+          <h3 style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 24px; color: #1F4E48; margin: 18px 0 0">Share a small win</h3>
+          <p style="font-size: 16px; line-height: 1.55; margin: 8px 0 0">Slept four hours in a row? Wore the nice shirt? It counts here. Loudly.</p>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 28px; box-shadow: 0 20px 50px rgba(31,78,72,.08)">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #FFEFE7; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C4674F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-5 4 10 2-5h5"/></svg></div>
+          <h3 style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 24px; color: #1F4E48; margin: 18px 0 0">Check in on the hard weeks</h3>
+          <p style="font-size: 16px; line-height: 1.55; margin: 8px 0 0">Post how it's going, or just read. Lurking is allowed. So is a full rant.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STORY -->
+  <section id="story" style="background: #F8F5EF; padding: 140px 32px">
+    <div style="max-width: 1180px; margin: 0 auto; background: #FFEFE7; border-radius: 36px; padding: clamp(22px, 5vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 56px; align-items: center">
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/portrait.webp" alt="Lukas, founder of Skinpal" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; display: block">
+      <div>
+        <p style="font-size: 14px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #B4583F; margin: 0">Why Skinpal exists</p>
+        <blockquote style="margin: 18px 0 0; font-family: Gabarito, sans-serif; font-weight: 700; font-size: 40px; line-height: 1.12; letter-spacing: -0.02em; color: #1F4E48">"What helped me most was tracking every day, so I could show instead of explain. So I built Skinpal."</blockquote>
+        <p style="font-size: 18px; line-height: 1.6; color: #3E6F69; margin: 24px 0 0">Lukas Löfgren, founder. Living with TSW since January 2022, still logging, and sharing the whole thing with 40,000+ people who follow his story.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 32px">
+          <figure style="margin: 0">
+            <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/kayak2020.webp" alt="Lukas kayaking in 2020, before TSW" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; display: block">
+            <figcaption style="font-size: 14px; font-weight: 600; color: #1F4E48; margin-top: 10px">2020 · before TSW</figcaption>
+          </figure>
+          <figure style="margin: 0">
+            <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/hat2022.webp" alt="Lukas one month into TSW, wearing a sun hat" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; display: block">
+            <figcaption style="font-size: 14px; font-weight: 600; color: #1F4E48; margin-top: 10px">2022 · one month in</figcaption>
+          </figure>
+        </div>
+        <a href="https://www.instagram.com/tswlukas/" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; font-weight: 600; font-size: 16px; min-height: 44px">Follow the whole story at @tswlukas
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ: written to be quoted by search engines and AI assistants -->
+  <section id="faq" style="background: #F8F5EF; padding: 0 32px 140px">
+    <div style="max-width: 860px; margin: 0 auto">
+      <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 56px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 0 0 28px">Questions people ask</h2>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0" open>
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">What is Skinpal?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Skinpal is an app and community for people with eczema and topical steroid withdrawal (TSW). You log itch, sleep, mood and where your skin flares, by tapping or by talking, and Skinpal shows your own patterns over time. It is made by TSW Nordic AB in Gothenburg, Sweden, and was founded by Lukas Löfgren, who has lived with TSW since January 2022.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">How do I keep track of TSW or eczema symptoms day to day?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Log once a day. In Skinpal that takes one tap if today is like yesterday, or a few spoken sentences. A calendar coloured by your itch then shows good and bad periods at a glance.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Can I share my eczema history with my doctor?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Yes. Skinpal creates a 90-day report from your logs: worst days, sleep, body areas and what you applied. You choose whether notes and photos are included.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Does Skinpal diagnose or treat eczema or TSW?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">No. Skinpal is a tracking tool. It helps you notice patterns in your own logs and share them. Decisions about treatment belong with you and your doctor.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Is my voice recorded when I use voice logging?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">The mic only listens when you tap it. Your words become a log entry and the audio is never stored.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Is there a community in Skinpal?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Yes. Skinpal has a community inside the app where people living with eczema and TSW ask questions, share small wins and check in with each other.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Is my data safe?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Your data is encrypted with AES-256, it is never sold, and you can delete your account and all your health data at any time.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">What does Skinpal cost?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Skinpal is free for 14 days. After that it costs $3.99 a month or $39.99 a year.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Which phones and languages does Skinpal support?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">iPhone and Android, in English and Spanish.</p>
+      </details>
+      <div style="border-top: 1px solid rgba(31,78,72,.14)"></div>
+    </div>
+  </section>
+  <!-- PRICING (interactive) -->
+  <section id="price" style="background: #F8F5EF; padding: 0 32px 140px; text-align: center">
+    <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 72px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 0">Free for 14 days.</h2>
+    <p style="font-size: 19px; margin: 16px 0 36px">Then one simple plan. Cancel any time in your app store settings.</p>
+    <p style="font-size: 15px; font-weight: 600; color: #1F4E48; margin: -20px 0 32px">AES-256 encrypted · Never sold · Delete any time</p>
+    <div role="group" aria-label="Billing period" style="display: inline-flex; background: #FFFFFF; border: 1px solid rgba(31,78,72,.12); border-radius: 999px; padding: 6px; gap: 4px">
+      <button type="button" data-plan="monthly" aria-pressed="false" style="border: 0; cursor: pointer; font-family: Inter, sans-serif; font-weight: 600; font-size: 15px; padding: 12px 24px; border-radius: 999px; min-height: 44px; background: transparent; color: #1F4E48">Monthly</button>
+      <button type="button" data-plan="yearly" aria-pressed="true" style="border: 0; cursor: pointer; font-family: Inter, sans-serif; font-weight: 600; font-size: 15px; padding: 12px 24px; border-radius: 999px; min-height: 44px; background: #1F4E48; color: #FFFFFF">Yearly</button>
+    </div>
+    <div style="max-width: 460px; margin: 28px auto 0; background: #FFFFFF; border-radius: 32px; padding: 48px 40px; box-shadow: 0 30px 70px rgba(31,78,72,.12)">
+      <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 80px; color: #1F4E48; line-height: 1"><span id="sp-price">$39.99</span></div>
+      <div style="font-size: 17px; margin-top: 8px"><span id="sp-per">per year, about two months free</span></div>
+      <ul style="list-style: none; padding: 0; margin: 32px 0; text-align: left; display: flex; flex-direction: column; gap: 12px; font-size: 16px; color: #1F4E48">
+        <li>One-tap and voice logging</li>
+        <li>Body map, calendar and insights</li>
+        <li>90-day report for your doctor</li>
+        <li>The Skinpal community</li>
+        <li>English and Spanish</li>
+      </ul>
+      <a href="#get" style="display: flex; justify-content: center; align-items: center; text-decoration: none; background: #1F4E48; color: #FFFFFF; border-radius: 16px; font-weight: 600; font-size: 17px; min-height: 56px">Start 14 days free</a>
+    </div>
+  </section>
+  <!-- FINAL CTA: SPRING -->
+  <section id="get" class="live" style="padding: 140px 32px 380px; text-align: center">
+    <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/land-spring.svg" alt="" aria-hidden="true">
+    <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 92px; line-height: .95; letter-spacing: -0.035em; color: #1F4E48; margin: 0">Your skin, day by day.</h2>
+    <p style="font-size: 19px; margin: 20px 0 0">iPhone and Android · English y español</p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 36px">
+      <a href="https://apps.apple.com/se/app/skinpal/id6755601252" style="display: inline-flex; align-items: center; text-decoration: none; background: #1F4E48; color: #FFFFFF; padding: 14px 28px; border-radius: 16px; font-weight: 600; font-size: 16px; min-height: 56px; box-sizing: border-box">Download for iPhone</a>
+      <a href="https://play.google.com/store/apps/details?id=com.skinpal.skinpalapp" style="display: inline-flex; align-items: center; text-decoration: none; background: #FFFFFF; color: #1F4E48; padding: 14px 28px; border-radius: 16px; font-weight: 600; font-size: 16px; min-height: 56px; box-sizing: border-box">Download for Android</a>
+    </div>
+    <img class="yeti" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/yeti-happy.svg" alt="" aria-hidden="true" style="position: absolute; left: 50%; bottom: 36px; width: 240px; margin-left: -120px; z-index: 1">
+  </section>
+  <footer style="background: #1F4E48; color: #DCE9E3; padding: 56px 32px">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px">
+      <div style="max-width: 420px">
+        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/v23/logo-white.png" alt="Skinpal" style="height: 30px; display: block">
+        <p style="font-size: 14px; line-height: 1.6; margin: 16px 0 0">Skinpal is a tracking app. It doesn't diagnose, treat or replace medical advice. © 2026 TSW Nordic AB, Gothenburg, Sweden.</p>
+      </div>
+      <nav aria-label="Footer" style="display: flex; gap: 22px; flex-wrap: wrap; font-size: 15px">
+        <a href="https://www.instagram.com/skinpal.app/" style="color: #FFEFE7; text-decoration: none">Instagram</a>
+        <a href="https://www.linkedin.com/company/skinpalapp/" style="color: #FFEFE7; text-decoration: none">LinkedIn</a>
+        <a href="mailto:info@skinpal.com" style="color: #FFEFE7; text-decoration: none">info@skinpal.com</a>
+        <a href="/topical-steroid-withdrawal" style="color: #FFEFE7; text-decoration: none">TSW guide</a>
+        <a href="/blog" style="color: #FFEFE7; text-decoration: none">Blog</a>
+        <a href="/termsofservice" style="color: #FFEFE7; text-decoration: none">Terms</a>
+        <a href="/privacypolicy" style="color: #FFEFE7; text-decoration: none">Privacy</a>
+        <a href="/eula" style="color: #FFEFE7; text-decoration: none">EULA</a>
+        <a href="/delete-your-account" style="color: #FFEFE7; text-decoration: none">Delete account</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+</div>
+<script>(function(){var r=document.getElementById('skinpal-home');if(!r)return;var bs=r.querySelectorAll('[data-plan]'),p=r.querySelector('#sp-price'),q=r.querySelector('#sp-per');
+var on='background: #1F4E48; color: #FFFFFF',off='background: transparent; color: #1F4E48';function set(y){bs.forEach(function(x){var a=(x.getAttribute('data-plan')==='yearly')===y;x.setAttribute('aria-pressed',a);x.style.background=a?'#1F4E48':'transparent';x.style.color=a?'#FFFFFF':'#1F4E48'});p.textContent=y?'$39.99':'$3.99';q.textContent=y?'per year, about two months free':'per month'}
+bs.forEach(function(x){x.addEventListener('click',function(){set(x.getAttribute('data-plan')==='yearly')})})})();</script>
+<script src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@0c49cb3/web/home-boot.js"></script>

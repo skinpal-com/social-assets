@@ -1,0 +1,39 @@
+# Skinpal
+
+> Skinpal is a mobile app and community for people living with topical steroid withdrawal (TSW) and eczema. Users log their day in one tap or by talking (voice logging; audio is never stored), mark symptoms on a body map, and see good and bad periods in a calendar coloured by itch. Daily and weekly summaries are written only from the user's own logs, and a 90-day report can be shared with a doctor. A community inside the app connects people going through the same thing. Skinpal does not give medical advice, diagnose or recommend treatment.
+
+## Key facts
+
+- Made by TSW Nordic AB, Gothenburg, Sweden.
+- Founded by Lukas Löfgren, who has lived with TSW since January 2022 and shares his story on Instagram as @tswlukas (40,000+ followers across platforms).
+- Platforms: iPhone (App Store) and Android (Google Play).
+- Languages: English and Spanish.
+- Price: 14-day free trial, then $3.99 per month or $39.99 per year (USD).
+- Data: encrypted at rest with AES-256 and in transit with TLS. Never sold. Users can delete their account and health data at any time.
+- Who it is for: adults with topical steroid withdrawal, eczema (atopic dermatitis) or similar long-running skin conditions who want a simple daily record to look back on and share with their doctor.
+
+## Main features
+
+- One-tap logging ("same as yesterday") and voice logging: say how the day was and Skinpal fills in the log. The mic only listens when tapped and audio is never stored.
+- Body map: mark several areas at once; itch on a 0 to 10 scale, sleep, mood, stress, food, notes and photos.
+- Calendar coloured by itch, showing good and bad periods at a glance.
+- Daily and weekly summaries built only from the user's own logs, to answer "is it better than last month?" No advice.
+- 90-day report to bring to a doctor, with notes and photos only if the user chooses.
+- Community inside the app, with spaces for TSW, for parents and for the emotional side of living with a skin condition.
+- Current version: 2.3 (November 2026), with a redesigned, calmer interface.
+
+## Links
+
+- [Homepage](https://www.skinpal.com/): what Skinpal is, features, pricing and FAQ
+- [TSW guide](https://www.skinpal.com/topical-steroid-withdrawal): what topical steroid withdrawal is and how tracking helps
+- [Blog](https://www.skinpal.com/blog): stories and practical notes about living with TSW and eczema
+- [Skinpal on the App Store](https://apps.apple.com/se/app/skinpal/id6755601252)
+- [Skinpal on Google Play](https://play.google.com/store/apps/details?id=com.skinpal.skinpalapp)
+- [Privacy Policy](https://www.skinpal.com/privacypolicy)
+- [Terms of Service](https://www.skinpal.com/termsofservice)
+- [Instagram @skinpal.app](https://www.instagram.com/skinpal.app/)
+- [LinkedIn](https://www.linkedin.com/company/skinpalapp/)
+
+## Contact
+
+info@skinpal.com

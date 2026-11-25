@@ -56,7 +56,12 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
  .sp-root .h2{font-size:44px !important}
  .sp-root .strip img:nth-child(1),.sp-root .strip img:nth-child(5){display:none}
  .sp-root .navlinks{display:none !important}
-}</style>
+}
+.sp-root .scr{border-radius:40px;box-shadow:0 40px 70px rgba(31,78,72,.22),0 10px 24px rgba(31,78,72,.12)}
+.sp-root .scr.fade{-webkit-mask-image:linear-gradient(180deg,#000 78%,transparent 100%);mask-image:linear-gradient(180deg,#000 78%,transparent 100%);border-radius:40px 40px 0 0;box-shadow:none}
+@media (max-width:900px){.sp-root .pair{grid-template-columns:minmax(0,1fr)!important}.sp-root .h3{font-size:36px!important}.sp-root .duo .card{width:200px!important;right:-6px!important}.sp-root .duo .scr{width:230px!important}.sp-root #more{padding:0 18px 110px!important}.sp-root #more article{padding:36px 26px 0!important}}
+@media (max-width:600px){.sp-root .h1{font-size:50px!important;line-height:.96!important}.sp-root header .yeti{display:none}.sp-root #journey .duo{gap:12px}.sp-root #journey .duo .scr{width:47%!important;transform:none!important}.sp-root .duo{margin-bottom:56px}}
+</style>
 <div class="sp-root" style="font-family: Inter, system-ui, sans-serif; color: #3E6F69; background: #F8F5EF; overflow: hidden">
   <!-- HERO: WINTER -->
   <header class="live" style="min-height: 1040px">
@@ -73,9 +78,8 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
       <a href="#get" style="text-decoration: none; background: #1F4E48; color: #FFFFFF; font-weight: 600; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Download</a>
     </nav>
     <div style="max-width: 1000px; margin: 0 auto; padding: 64px 32px 0; text-align: center; position: relative">
-      <h1 style="display: inline-block; margin: 0; background: #E98D74; color: #1A1A1A; font-family: Inter, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 600; padding: 8px 16px; border-radius: 999px">Skinpal: a tracker and community for topical steroid withdrawal (TSW) and eczema</h1>
-      <p role="heading" aria-level="2" class="h1" style="font-family: Gabarito, Inter, sans-serif; font-weight: 800; font-size: 136px; line-height: .9; letter-spacing: -0.04em; color: #1F4E48; margin: 28px 0 0">Meet the new Skinpal.</p>
-      <p style="font-size: 21px; line-height: 1.55; color: #3E6F69; max-width: 640px; margin: 28px auto 0">A calmer tracker and community for eczema and TSW. One tap or a few spoken words, and your day is logged. AI insights built from what you log show your own patterns over time. And you're never the only one awake at 3am.</p>
+      <h1 class="h1" style="font-family: Gabarito, Inter, sans-serif; font-weight: 800; font-size: 112px; line-height: .92; letter-spacing: -0.04em; color: #1F4E48; margin: 12px 0 0">The eczema and TSW tracker that gets it</h1>
+      <p style="font-size: 21px; line-height: 1.55; color: #3E6F69; max-width: 640px; margin: 28px auto 0">Log your day in one tap or a few spoken words. Every morning, Skinpal shows where your skin is and what tends to make it harder or calmer, worked out from your own logs. It counts every TSW day, reminds you of what helps, and you're never the only one awake at 3am.</p>
       <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 36px">
         <a href="#get" style="display: inline-flex; align-items: center; text-decoration: none; background: #1F4E48; color: #FFFFFF; padding: 14px 28px; border-radius: 16px; font-weight: 600; font-size: 16px; min-height: 56px; box-sizing: border-box">Start 14 days free</a>
         <a href="#how" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; background: #FFFFFF; color: #1F4E48; padding: 14px 28px; border-radius: 16px; font-weight: 600; font-size: 16px; min-height: 56px; box-sizing: border-box; border: 1px solid rgba(31,78,72,.15)">
@@ -92,7 +96,7 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
     <div class="strip" style="margin-top: -260px; position: relative">
       <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-welcome.webp" alt="Welcome screen" style="width: 210px; transform: translateY(70px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.2))">
       <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-logstart.webp" alt="One-tap log screen" style="width: 240px; transform: translateY(30px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.22))">
-      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-home.webp" alt="Home screen with insights" style="width: 290px; filter: drop-shadow(0 40px 70px rgba(31,78,72,.28))">
+      <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@bdc373c/web/v24/phone-journey.webp" alt="Your journey screen: TSW day milestones and 57 of 60 days logged" style="width: 290px; filter: drop-shadow(0 40px 70px rgba(31,78,72,.28))">
       <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-bodymap.webp" alt="Body map screen" style="width: 240px; transform: translateY(30px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.22))">
       <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-calendar.webp" alt="Calendar screen" style="width: 210px; transform: translateY(70px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.2))">
     </div>
@@ -104,7 +108,7 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
     <div class="chapter">
       <div>
         <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">01</div>
-        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">One tap on the hard days.</h2>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">One tap on the hard days</h2>
         <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Feeling the same as yesterday? Tap once and you're done. For the days when typing is a big ask, and honestly, most of them are.</p>
       </div>
       <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-logstart.webp" alt="One-tap logging screen" style="width: 330px; justify-self: center; filter: drop-shadow(0 40px 60px rgba(31,78,72,.25))">
@@ -131,7 +135,7 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
       </div>
       <div>
         <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">02</div>
-        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">Or just talk.</h2>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">Or just talk</h2>
         <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Say how your day was. Skinpal turns it into a log. The mic only listens when you tap, and the audio is never stored. Typing is optional. Complaining is encouraged.</p>
       </div>
     </div>
@@ -142,25 +146,65 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
     <div class="chapter">
       <div>
         <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">03</div>
-        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">Mark where you feel it.</h2>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">Mark where you feel it</h2>
         <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Several body areas at once, described once. Because it rarely has the manners to stay in one place.</p>
       </div>
       <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-bodymap.webp" alt="Body map screen" style="width: 330px; justify-self: center; filter: drop-shadow(0 40px 60px rgba(31,78,72,.25))">
     </div>
   </section>
-  <!-- 04 SUMMER: PATTERNS -->
+  <!-- 04 SUMMER: YOUR SKIN -->
   <section class="live">
     <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/land-summer.svg" alt="" aria-hidden="true">
     <div class="chapter">
-      <div style="display: flex; justify-content: center; align-items: flex-end">
-        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-calendar.webp" alt="Calendar coloured by itch" style="width: 260px; transform: rotate(-5deg) translateX(30px); filter: drop-shadow(0 30px 50px rgba(31,78,72,.22))">
-        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/phone-home.webp" alt="Home screen with insights" style="width: 290px; position: relative; z-index: 2; filter: drop-shadow(0 40px 60px rgba(31,78,72,.28))">
+      <div class="duo" style="display: flex; justify-content: center; align-items: flex-start; position: relative">
+        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@bdc373c/web/v24/screen-yourskin.webp" alt="Your skin page: day 8 of a calmer stretch, with itch over the last month" width="640" height="1150" loading="lazy" class="scr fade" style="width: 300px; height: auto">
+        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@bdc373c/web/v24/card-focus.webp" alt="Today's focus card: make room for calm, with three tips and their sources" width="620" height="650" loading="lazy" class="card" style="width: 270px; height: auto; position: absolute; right: 0; bottom: -40px; border-radius: 26px; box-shadow: 0 30px 60px rgba(31,78,72,.22)">
       </div>
       <div>
         <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">04</div>
-        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">AI insights from your own logs.</h2>
-        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Skinpal's AI reads what you log and writes daily and weekly insights in plain words: how this week compares to last, and what tends to come before your calmer days. It only uses your own logs. A calendar coloured by your itch shows the good and bad stretches at a glance. No medical advice, no guessing, no horoscope.</p>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">Your skin, every morning</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Every morning Skinpal tells you where you are: a calmer stretch or a tougher one, with your itch over the last month. Then one thing to focus on today, with practical tips and where they come from, like TSW groups, the NHS and research.</p>
+        <p style="font-size: 19px; line-height: 1.6; margin: 16px 0 0; max-width: 480px">Below that, what tends to make your skin harder and what tends to help, worked out from your own logs. Short nights came with more itch, 10 of 11 times. That kind of thing. Patterns, not causes. No diagnosis, no horoscope.</p>
       </div>
+    </div>
+  </section>
+  <!-- 05 AUTUMN: JOURNEY -->
+  <section id="journey" style="background: linear-gradient(180deg,#F8F5EF 0%,#F6E4D6 100%); padding: 0">
+    <div class="chapter" style="padding-bottom: 180px">
+      <div>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">05</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">Every TSW day counted</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Skinpal counts your TSW days from the day you started, and walks you through the seasons with the yeti. Milestones mark the way, for the days you log and for your TSW days.</p>
+        <p style="font-size: 19px; line-height: 1.6; margin: 16px 0 0; max-width: 480px">Keep a streak going if you like that kind of thing. Miss a day and your milestones stay. The hard days count too, probably the most.</p>
+      </div>
+      <div class="duo" style="display: flex; justify-content: center; align-items: flex-end">
+        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@bdc373c/web/v24/screen-journey.webp" alt="Your journey: an autumn path with milestones, 57 of 60 days logged" width="640" height="1387" loading="lazy" class="scr" style="width: 260px; height: auto; transform: rotate(-4deg) translateX(24px)">
+        <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@bdc373c/web/v24/screen-streak.webp" alt="Six days in a row, three more to 60 days logged" width="640" height="1387" loading="lazy" class="scr" style="width: 260px; height: auto; position: relative; z-index: 2; transform: translateY(40px)">
+      </div>
+    </div>
+  </section>
+  <!-- 06 + 07: REMINDERS AND CYCLE -->
+  <section id="more" style="background: #F6E4D6; padding: 0 32px 160px">
+    <div class="pair" style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px">
+      <article style="background: #FFFFFF; border-radius: 36px; padding: 48px 44px 0; overflow: hidden; display: flex; flex-direction: column">
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 72px; line-height: 1; color: #E98D74">06</div>
+        <h2 class="h3" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 44px; line-height: 1.02; letter-spacing: -0.03em; color: #1F4E48; margin: 10px 0 0">Reminders that don't nag</h2>
+        <p style="font-size: 18px; line-height: 1.6; margin: 18px 0 0">Take your medication, moisturise, drink some water, take a breathing break. Your times, your days, up to eight. Reminders are saved on your phone only, and the text never leaves it.</p>
+        <p style="font-size: 18px; line-height: 1.6; margin: 12px 0 0">We will never remind you to just stop scratching.</p>
+        <div style="position: relative; margin: 40px auto 0; width: 300px; max-width: 100%">
+          <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@bdc373c/web/v24/notif-medication.webp" alt="Notification: Skinpal, take my medication" width="640" height="105" loading="lazy" style="width: 300px; height: auto; display: block; position: relative; z-index: 2; border-radius: 18px; box-shadow: 0 14px 30px rgba(31,78,72,.16); margin-bottom: 14px">
+          <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@bdc373c/web/v24/screen-reminders.webp" alt="Reminders: daily check-in, take my medication at 8:00 and moisturise at 1:30" width="640" height="1102" loading="lazy" class="scr fade" style="width: 280px; height: auto; display: block; margin: 0 auto">
+        </div>
+      </article>
+      <article style="background: #FFFFFF; border-radius: 36px; padding: 48px 44px 0; overflow: hidden; display: flex; flex-direction: column">
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 72px; line-height: 1; color: #E98D74">07</div>
+        <h2 class="h3" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 44px; line-height: 1.02; letter-spacing: -0.03em; color: #1F4E48; margin: 10px 0 0">Your cycle, if you want it</h2>
+        <p style="font-size: 18px; line-height: 1.6; margin: 18px 0 0">Does your skin get worse around your period? If you get periods, you can log them. Period days get a dot in the calendar, and after two logged periods you can compare your itch on period days with the weeks around them.</p>
+        <p style="font-size: 18px; line-height: 1.6; margin: 12px 0 0">Optional, off until you turn it on, and never used for ads. A pattern, not a diagnosis.</p>
+        <div style="margin: 40px auto 0; width: 280px; max-width: 100%">
+          <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@bdc373c/web/v24/screen-cycle.webp" alt="Calendar with period days marked, and average itch on period days compared with the weeks around them, for a test account" width="640" height="1387" loading="lazy" class="scr fade" style="width: 280px; height: auto; display: block">
+        </div>
+      </article>
     </div>
   </section>
   <!-- 05 EVENING: REPORT -->
@@ -169,9 +213,9 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
     <img class="yeti" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/yeti-sleepy.svg" alt="" aria-hidden="true" style="position: absolute; right: 7%; bottom: 24px; width: 200px; z-index: 1">
     <div class="chapter" style="padding-bottom: 340px">
       <div>
-        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">05</div>
-        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #FFFFFF; margin: 12px 0 0">A clear report for your doctor.</h2>
-        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Ninety days of your logs on one page, ready before your appointment. You decide whether notes and photos go in. Much better than "it's been, um, bad?"</p>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">08</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #FFFFFF; margin: 12px 0 0">A clear report for your doctor</h2>
+        <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 480px">Ninety days of your logs on one page, ready before your appointment. You decide whether notes, photos and period days go in. It's made on your phone. Much better than "it's been, um, bad?"</p>
       </div>
       <img src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/report.webp" alt="Example page of the 90-day report for a fictional user" style="width: 100%; max-width: 520px; justify-self: center; border-radius: 16px; transform: rotate(3deg); box-shadow: 0 40px 90px rgba(0,0,0,.4)">
     </div>
@@ -180,8 +224,8 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
   <section id="community" style="background: #F8F5EF; padding: 160px 32px 0">
     <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 56px; align-items: center">
       <div>
-        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">06</div>
-        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">A community that gets it. Inside the app.</h2>
+        <div style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 120px; line-height: 1; color: #E98D74">09</div>
+        <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 12px 0 0">A community that gets it, inside the app</h2>
         <p style="font-size: 19px; line-height: 1.6; margin: 24px 0 0; max-width: 520px">Skinpal has its own community of people living with eczema and TSW. Ask the questions you can't ask anyone else, share the small wins, and check in on the bad weeks. There are spaces for TSW, for parents, and for the emotional side of it. Nobody asks you to explain. Everybody already knows.</p>
         <a href="https://www.instagram.com/skinpal.app/" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; font-weight: 600; font-size: 16px; min-height: 44px">We're on Instagram too, @skinpal.app
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -235,21 +279,37 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
   <section id="faq" style="background: #F8F5EF; padding: 0 32px 140px">
     <div style="max-width: 860px; margin: 0 auto">
       <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 56px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 0 0 28px">Questions people ask</h2>
-      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0" open>
+<details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0" open>
         <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">What is Skinpal?</summary>
-        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Skinpal is an app and community for people with eczema and topical steroid withdrawal (TSW). You log itch, sleep, mood and where your skin flares, by tapping or by talking, and Skinpal's AI turns your logs into daily and weekly insights about your own patterns. It is made by TSW Nordic AB in Gothenburg, Sweden, and was founded by Lukas Löfgren, who has lived with TSW since January 2022.</p>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Skinpal is an app and community for people with eczema and topical steroid withdrawal (TSW). You log itch, sleep, mood and where your skin flares, by tapping or by talking. Every morning Skinpal shows where your skin is, one thing to focus on, and what tends to make it harder or calmer, based on your own logs. It also counts your TSW days, sends the reminders you set, and has a community of people who get it. It is made by TSW Nordic AB in Gothenburg, Sweden, and was founded by Lukas Löfgren, who has lived with TSW since January 2022.</p>
       </details>
       <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
         <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">How do I keep track of TSW or eczema symptoms day to day?</summary>
         <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Log once a day. In Skinpal that takes one tap if today is like yesterday, or a few spoken sentences. A calendar coloured by your itch then shows good and bad periods at a glance.</p>
       </details>
       <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
-        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Can I share my eczema history with my doctor?</summary>
-        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Yes. Skinpal creates a 90-day report from your logs: worst days, sleep, body areas and what you applied. You choose whether notes and photos are included.</p>
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">What does Skinpal show me every morning?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">A short summary built from your logs: whether you are in a calmer stretch or a tougher one, your itch over the last month or three months, one focus for today with practical tips and their sources, and the things that tend to make your skin harder or help, with how often, for example 10 of 11 times. New patterns are labelled as early signs.</p>
       </details>
       <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
-        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">What are AI insights in Skinpal?</summary>
-        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Skinpal's AI reads what you log, such as itch, sleep, mood and where your skin flares, and writes daily and weekly insights in plain words, like how this week compares to last. The insights are based only on your own logs. They don't diagnose anything or give medical advice.</p>
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">How does the AI in Skinpal work?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">The app's own code works out every fact and pattern from your logs. AI then writes a few sentences around those facts, and they are checked against strict rules before you see them: no medical advice, no product names, no cure. If a sentence fails the check, you see text we wrote and reviewed ourselves. Skinpal does not diagnose anything.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Can Skinpal count my TSW days?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Yes. Set the day your TSW started and Skinpal counts every day since. Your journey shows milestones for the days you log and for your TSW days. You can keep a streak going if you like, and if you miss a day your milestones stay.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Can Skinpal remind me to take my medication or moisturise?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Yes. Choose a daily check-in in the morning or the evening, and add up to eight reminders of your own, with your own times and days. Reminders are saved on your phone only, and the text never leaves it.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Can I see if my period affects my eczema?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">If you get periods, you can log them in Skinpal. It is optional and off until you turn it on. Period days get a dot in the calendar, and after two logged periods the calendar compares your average itch on period days with the weeks around them. That comparison is worked out on your phone, and your period data is never used for ads.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Can I share my eczema history with my doctor?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Yes. Skinpal makes a 90-day report from your logs, on your phone: worst days, sleep, body areas and what you applied. You choose whether notes, photos and period days are included.</p>
       </details>
       <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
         <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Does Skinpal diagnose or treat eczema or TSW?</summary>
@@ -260,12 +320,16 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
         <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">The mic only listens when you tap it. Your words become a log entry and the audio is never stored.</p>
       </details>
       <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
+        <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Does Skinpal show weather, pollen and air quality?</summary>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Yes. The home screen shows the weather, pollen and air quality for your town, next to your day.</p>
+      </details>
+      <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
         <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Is there a community in Skinpal?</summary>
         <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Yes. Skinpal has a community inside the app where people living with eczema and TSW ask questions, share small wins and check in with each other.</p>
       </details>
       <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
         <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">Is my data safe?</summary>
-        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Your data is encrypted with AES-256, it is never sold, and you can delete your account and all your health data at any time.</p>
+        <p style="font-size: 17px; line-height: 1.6; margin: 12px 0 0">Your health data is never sold and never used for ads. Skinpal asks before it stores your health data, and you can delete your account and all your data at any time in Profile.</p>
       </details>
       <details style="border-top: 1px solid rgba(31,78,72,.14); padding: 22px 0">
         <summary style="cursor: pointer; font-size: 19px; font-weight: 600; color: #1F4E48">What does Skinpal cost?</summary>
@@ -280,9 +344,9 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
   </section>
   <!-- PRICING (interactive) -->
   <section id="price" style="background: #F8F5EF; padding: 0 32px 140px; text-align: center">
-    <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 72px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 0">Free for 14 days.</h2>
+    <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 72px; line-height: 1; letter-spacing: -0.03em; color: #1F4E48; margin: 0">Free for 14 days</h2>
     <p style="font-size: 19px; margin: 16px 0 36px">Then one simple plan. Cancel any time in your app store settings.</p>
-    <p style="font-size: 15px; font-weight: 600; color: #1F4E48; margin: -20px 0 32px">AES-256 encrypted · Never sold · Delete any time</p>
+    <p style="font-size: 15px; font-weight: 600; color: #1F4E48; margin: -20px 0 32px">Never sold · Never used for ads · Delete any time</p>
     <div role="group" aria-label="Billing period" style="display: inline-flex; background: #FFFFFF; border: 1px solid rgba(31,78,72,.12); border-radius: 999px; padding: 6px; gap: 4px">
       <button type="button" data-plan="monthly" aria-pressed="false" style="border: 0; cursor: pointer; font-family: Inter, sans-serif; font-weight: 600; font-size: 15px; padding: 12px 24px; border-radius: 999px; min-height: 44px; background: transparent; color: #1F4E48">Monthly</button>
       <button type="button" data-plan="yearly" aria-pressed="true" style="border: 0; cursor: pointer; font-family: Inter, sans-serif; font-weight: 600; font-size: 15px; padding: 12px 24px; border-radius: 999px; min-height: 44px; background: #1F4E48; color: #FFFFFF">Yearly</button>
@@ -292,9 +356,10 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
       <div style="font-size: 17px; margin-top: 8px"><span id="sp-per">per year, about two months free</span></div>
       <ul style="list-style: none; padding: 0; margin: 32px 0; text-align: left; display: flex; flex-direction: column; gap: 12px; font-size: 16px; color: #1F4E48">
         <li>One-tap and voice logging</li>
-        <li>AI insights from your logs</li>
-        <li>Body map and itch calendar</li>
-        <li>90-day report for your doctor</li>
+        <li>Your skin, every morning, from your logs</li>
+        <li>Your journey, milestones and streaks</li>
+        <li>Reminders and optional period tracking</li>
+        <li>Body map, itch calendar and doctor report</li>
         <li>The Skinpal community</li>
         <li>English and Spanish</li>
       </ul>
@@ -304,7 +369,7 @@ body.sp-home .page-section,body.sp-home .content-wrapper{padding-top:0!important
   <!-- FINAL CTA: SPRING -->
   <section id="get" class="live" style="padding: 140px 32px 380px; text-align: center">
     <img class="land" src="https://cdn.jsdelivr.net/gh/skinpal-com/social-assets@8308b99/web/v23/land-spring.svg" alt="" aria-hidden="true">
-    <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 92px; line-height: .95; letter-spacing: -0.035em; color: #1F4E48; margin: 0">Your skin, day by day.</h2>
+    <h2 class="h2" style="font-family: Gabarito, sans-serif; font-weight: 800; font-size: 92px; line-height: .95; letter-spacing: -0.035em; color: #1F4E48; margin: 0">Your skin, day by day</h2>
     <p style="font-size: 19px; margin: 20px 0 0">iPhone and Android · English y español</p>
     <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 36px">
       <a href="https://apps.apple.com/se/app/skinpal/id6755601252" style="display: inline-flex; align-items: center; text-decoration: none; background: #1F4E48; color: #FFFFFF; padding: 14px 28px; border-radius: 16px; font-weight: 600; font-size: 16px; min-height: 56px; box-sizing: border-box">Download for iPhone</a>

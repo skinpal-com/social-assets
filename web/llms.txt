@@ -1,6 +1,6 @@
 # Skinpal
 
-> Skinpal is a mobile app and community for people living with topical steroid withdrawal (TSW) and eczema. Users log their day in one tap or by talking (voice logging; audio is never stored), mark symptoms on a body map, and see good and bad periods in a calendar coloured by itch. AI insights: Skinpal's AI writes daily and weekly insights in plain words, based only on the user's own logs, and a 90-day report can be shared with a doctor. A community inside the app connects people going through the same thing. Skinpal does not give medical advice, diagnose or recommend treatment.
+> Skinpal is a mobile app and community for people living with topical steroid withdrawal (TSW) and eczema. Users log their day in one tap or by talking. Every morning Skinpal shows where their skin is (a calmer or a tougher stretch), one thing to focus on with sources, and what tends to make their skin harder or calmer, worked out from their own logs. It also counts TSW days with milestones, sends reminders the user sets, tracks periods if the user wants, and makes a 90-day report for the doctor. Skinpal does not give medical advice, diagnose or recommend treatment.
 
 ## Key facts
 
@@ -9,18 +9,23 @@
 - Platforms: iPhone (App Store) and Android (Google Play).
 - Languages: English and Spanish.
 - Price: 14-day free trial, then $3.99 per month or $39.99 per year (USD).
-- Data: encrypted at rest with AES-256 and in transit with TLS. Never sold. Users can delete their account and health data at any time.
-- Who it is for: adults with topical steroid withdrawal, eczema (atopic dermatitis) or similar long-running skin conditions who want a simple daily record to look back on and share with their doctor.
+- Data: health data is never sold and never used for ads. Skinpal asks before it stores health data. Users can delete their account and all their data at any time in Profile.
+- Who it is for: people with topical steroid withdrawal, eczema (atopic dermatitis) or similar long-running skin conditions who want a simple daily record, to see their own patterns and to share them with their doctor.
+- Current version: 2.4 (November 2026).
 
 ## Main features
 
 - One-tap logging ("same as yesterday") and voice logging: say how the day was and Skinpal fills in the log. The mic only listens when tapped and audio is never stored.
 - Body map: mark several areas at once; itch on a 0 to 10 scale, sleep, mood, stress, food, notes and photos.
+- Your skin, every morning: where you are (a calmer stretch or a tougher one), itch over the last month or three months, one focus for the day with practical tips and their sources (for example TSW groups, the NHS and research), and what tends to make skin harder or help, with how often (for example "10 of 11 times"). New patterns are labelled early signs. Patterns, not causes.
+- How the AI works: the app's own code works out every fact and pattern from the user's logs. AI only writes a few sentences around those facts, and they are checked against strict rules (no medical advice, no product names, no cure). If a sentence fails the check, the user sees text written and reviewed by the Skinpal team.
+- Your journey: a TSW day counter from the day TSW started, a path through the seasons with the yeti mascot, milestones for logged days and TSW days, and an optional streak. Missing a day does not take milestones away.
+- Reminders: a daily check-in (morning or evening) and up to eight personal reminders, such as take my medication, moisturise or drink water. Reminders are saved on the phone only and their text never leaves it.
+- Your cycle (optional, off until turned on): log period days, see them in the calendar, and after two logged periods compare average itch on period days with the weeks around them. Worked out on the phone. Period data is never used for ads.
 - Calendar coloured by itch, showing good and bad periods at a glance.
-- AI insights: daily and weekly insights written by AI from the user's own logs only, to answer "is it better than last month?" The AI does not diagnose or give medical advice.
-- 90-day report to bring to a doctor, with notes and photos only if the user chooses.
+- 90-day doctor report made on the phone, with notes, photos and period days only if the user chooses.
+- Weather, pollen and air quality for the user's town.
 - Community inside the app, with spaces for TSW, for parents and for the emotional side of living with a skin condition.
-- Current version: 2.3 (November 2026), with a redesigned, calmer interface.
 
 ## Links
 
